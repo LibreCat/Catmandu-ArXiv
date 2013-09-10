@@ -4,6 +4,10 @@
 [![Coverage Status](https://coveralls.io/repos/LibreCat/Catmandu-ArXiv/badge.png?branch=master)](https://coveralls.io/r/LibreCat/Catmandu-ArXiv?branch=master)
 [![Kwalitee Score](http://cpants.cpanauthors.org/dist/Catmandu-ArXiv.png)](http://cpants.cpanauthors.org/dist/Catmandu-ArXiv)
 
+## About
+
+This module imports data from http://arxiv.org.
+
 ## Installation
 
 To install this module, run the following commands:
@@ -18,4 +22,4 @@ To install this module, run the following commands:
 After installing, you can find documentation for this module with the
 perldoc command.
 
-  perldoc Catmandu::ArXiv
+	perldoc Catmandu::ArXiv

@@ -6,7 +6,8 @@ my $builder = Module::Build->new(
     module_name => 'Catmandu::ArXiv',
     license => 'perl',
     dist_author => [
-        'Wouter Willaert <wouterw@inuits.eu>'
+        'Wouter Willaert <wouterw@inuits.eu>',
+        'Vitali Peil <vitali.peil at uni-bielefeld.de>',
     ],
     dist_version_from => 'lib/Catmandu/ArXiv.pm',
     build_requires => {
@@ -16,10 +17,9 @@ my $builder = Module::Build->new(
     },
     requires => {
         'perl' => '5.10.1',
-        'Catmandu' => '0.0302',
-        'Furl' => '0.41',
-        'XML::LibXML::Simple' => '0.91',
-        'Moo' => '1.000003',
+        'Catmandu' => '0.7',
+        'Furl' => '2.19',
+        'XML::LibXML::Simple' => '0.93',
     },
     add_to_cleanup => [qw(
         Catmandu-ArXiv*

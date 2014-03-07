@@ -1,16 +1,10 @@
 package Catmandu::ArXiv;
 
+our $VERSION = '0.02';
+
 =head1 NAME
 
 Catmandu::ArXiv - Catmandu modules for working with ArXiv data.
-
-=head1 VERSION
-
-Version 0.02
-
-=cut
-
-our $VERSION = '0.02';
 
 =head1 MODULES
 

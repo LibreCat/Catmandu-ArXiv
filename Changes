@@ -1,4 +1,9 @@
 Revision history for Catmandu-ArXiv
 
+0.02 	2013-09-10
+	- travis, coveralls, kwalitee
+	- Build.PL updated to newer versions
+
+
 0.01    2012-08-02
-  - initial release
+	- initial release

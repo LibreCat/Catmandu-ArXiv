@@ -6,11 +6,11 @@ Catmandu::ArXiv - Catmandu modules for working with ArXiv data.
 
 =head1 VERSION
 
-Version 0.01
+Version 0.02
 
 =cut
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 =head1 MODULES
 
@@ -25,6 +25,8 @@ our $VERSION = '0.01';
 =over
 
 =item * Wouter Willaert, C<< <wouterw@inuits.eu> >>
+
+=item * Vitali Peil, C << <vitali.peil at uni-bielefeld.de> >>
 
 =back
 

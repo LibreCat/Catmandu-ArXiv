@@ -22,4 +22,11 @@ isa_ok($importer, $pkg);
 
 can_ok($importer, 'each');
 
-done_testing 4;
+can_ok($importer, 'count');
+
+my $num = $importer->count();
+
+ok($num > 10, 'Got some results');
+
+
+done_testing 6;

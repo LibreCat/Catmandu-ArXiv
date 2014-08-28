@@ -6,6 +6,18 @@ our $VERSION = '0.02';
 
 Catmandu::ArXiv - Catmandu modules for working with ArXiv data.
 
+=head1 STATUS
+
+=begin HTML
+
+<p>
+<a href="https://travis-ci.org/LibreCat/Catmandu-ArXiv"><img src="https://travis-ci.org/LibreCat/Catmandu-ArXiv.svg?branch=master" alt="build status" /></a>
+<a href="https://coveralls.io/repos/LibreCat/Catmandu-ArXiv/"><img src="https://coveralls.io/repos/LibreCat/Catmandu-ArXiv/badge.png?branch=master" alt="coverage status" /></a>
+<a href="http://cpants.cpanauthors.org/dist/Catmandu-ArXiv"><img src="http://cpants.cpanauthors.org/dist/Catmandu-ArXiv.png" alt="kwalitee score" /></a>
+</p>
+
+=end HTML
+
 =head1 MODULES
 
 =over
@@ -18,9 +30,9 @@ Catmandu::ArXiv - Catmandu modules for working with ArXiv data.
 
 =over
 
-=item * Wouter Willaert, C<< <wouterw@inuits.eu> >>
+=item * Wouter Willaert
 
-=item * Vitali Peil, C << <vitali.peil at uni-bielefeld.de> >>
+=item * Vitali Peil
 
 =back
 

@@ -1,6 +1,6 @@
 package Catmandu::ArXiv;
 
-our $VERSION = '0.02';
+our $VERSION = '0.021';
 
 =head1 NAME
 

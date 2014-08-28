@@ -18,7 +18,7 @@ my %module_build_args = (
     "=over"
   ],
   "dist_name" => "Catmandu-ArXiv",
-  "dist_version" => "0.02",
+  "dist_version" => "0.021",
   "license" => "perl",
   "module_name" => "Catmandu::ArXiv",
   "recommends" => {},

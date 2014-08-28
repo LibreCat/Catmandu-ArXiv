@@ -1,6 +1,9 @@
 Revision history for Catmandu-ArXiv
 
 {{$NEXT}}
+
+0.021  2014-08-28 09:38:08 CEST
+    - use Catmandu::XML
 	- switch to Dist::Milla as build tool
 	- tests modified
 

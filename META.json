@@ -67,7 +67,7 @@
          "web" : "https://github.com/LibreCat/Catmandu-ArXiv"
       }
    },
-   "version" : "0.02",
+   "version" : "0.021",
    "x_contributors" : [
       "vpeil <vitali.peil@uni-bielefeld.de>",
       "wouterw <wouter.willaert@gmail.com>"

@@ -19,6 +19,11 @@ Catmandu::ArXiv - Catmandu modules for working with ArXiv data.
 - Wouter Willaert
 - Vitali Peil
 
+# MAINTAINER
+
+- Vitali Peil `<vitali.peil at uni-bielefeld.de>`
+- Christian Pietsch `<cpietsch+librecat at uni-bielefeld.de>`
+
 # LICENSE AND COPYRIGHT
 
 This program is free software; you can redistribute it and/or modify it

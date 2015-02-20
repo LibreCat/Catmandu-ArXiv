@@ -6,7 +6,7 @@ Catmandu::ArXiv - Catmandu modules for working with ArXiv data.
 
 <p>
 <a href="https://travis-ci.org/LibreCat/Catmandu-ArXiv"><img src="https://travis-ci.org/LibreCat/Catmandu-ArXiv.svg?branch=master" alt="build status" /></a>
-<a href="https://coveralls.io/repos/LibreCat/Catmandu-ArXiv/"><img src="https://coveralls.io/repos/LibreCat/Catmandu-ArXiv/badge.png?branch=master" alt="coverage status" /></a>
+<a href="https://coveralls.io/r/LibreCat/Catmandu-ArXiv/"><img src="https://coveralls.io/repos/LibreCat/Catmandu-ArXiv/badge.png?branch=master" alt="coverage status" /></a>
 <a href="http://cpants.cpanauthors.org/dist/Catmandu-ArXiv"><img src="http://cpants.cpanauthors.org/dist/Catmandu-ArXiv.png" alt="kwalitee score" /></a>
 </p>
 
@@ -21,8 +21,8 @@ Catmandu::ArXiv - Catmandu modules for working with ArXiv data.
 
 # MAINTAINER
 
-- Vitali Peil `<vitali.peil at uni-bielefeld.de>`
-- Christian Pietsch `<cpietsch+librecat at uni-bielefeld.de>`
+- Vitali Peil
+- Christian Pietsch
 
 # LICENSE AND COPYRIGHT
 

@@ -30,7 +30,7 @@ sub _request {
 
     my $furl = Furl->new(
         agent   => 'Mozilla/5.0',
-        timeout => 10
+        timeout => 20,
     );
 
     my $res = $furl->get($url);

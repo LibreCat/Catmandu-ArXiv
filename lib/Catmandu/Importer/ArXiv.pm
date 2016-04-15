@@ -14,7 +14,7 @@ use constant BASE_URL => 'http://export.arxiv.org/api/query?';
 
 has base => ( is => 'ro', default => sub { return BASE_URL; } );
 has query => ( is => 'ro' );
-has id    => ( is => 'ro' );    # can be a comma seperated list
+has id    => ( is => 'ro' ); # can be a comma seperated list
 has start => ( is => 'ro' );
 has limit => ( is => 'ro' );
 

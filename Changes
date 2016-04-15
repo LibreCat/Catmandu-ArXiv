@@ -2,6 +2,10 @@ Revision history for Catmandu-ArXiv
 
 {{$NEXT}}
 
+0.023  2016-04-15 12:37:58 CEST
+    - set timeout
+    - badge (travis, coveralls)
+
 0.022  2015-02-20 07:36:07 CET
     - make tests happy
     - maintainer added

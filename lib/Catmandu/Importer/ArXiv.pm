@@ -15,14 +15,15 @@ use constant BASE_URL => 'http://export.arxiv.org/api/query?';
 has base => ( is => 'ro', default => sub { return BASE_URL; } );
 has query => ( is => 'ro' );
 has id    => ( is => 'ro' ); # can be a comma seperated list
+has orcid => ( is => 'ro' );
 has start => ( is => 'ro' );
 has limit => ( is => 'ro' );
 
 sub BUILD {
     my $self = shift;
 
-    Catmandu::BadVal->throw("Either ID or QUERY is required.")
-        unless $self->id || $self->query;
+    Catmandu::BadVal->throw("Either id or query or orcid is required.")
+        unless $self->id || $self->query || $self->orcid;
 }
 
 sub _request {
@@ -42,11 +43,17 @@ sub _request {
 sub _call {
     my ($self) = @_;
 
-    my $url = $self->base;
-    $url .= 'search_query=' . $self->query if $self->query;
-    $url .= '&id_list=' . $self->id        if $self->id;
-    $url .= '&start=' . $self->start       if $self->start;
-    $url .= '&max_results=' . $self->limit if $self->limit;
+    my $url;
+    if ($self->orcid) {
+        $url = "https://arxiv.org/a/" . $self->orcid . ".atom2";
+    }
+    else {
+        $url = $self->base;
+        $url .= 'search_query=' . $self->query if $self->query;
+        $url .= '&id_list=' . $self->id        if $self->id;
+        $url .= '&start=' . $self->start       if $self->start;
+        $url .= '&max_results=' . $self->limit if $self->limit;
+    }
 
     my $res = $self->_request($url);
 

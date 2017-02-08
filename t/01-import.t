@@ -1,6 +1,7 @@
 use strict;
 use warnings FATAL => 'all';
 use Test::More;
+use Test::Exception;
 
 my $pkg;
 
@@ -9,13 +10,18 @@ BEGIN {
     use_ok $pkg;
 }
 
-my $imp = $pkg->new( id => '1408.6349' );
-is( $imp->count, 1, "count ok" );
+require_ok $pkg;
 
-my $imp2 = $pkg->new( id => '1408.6349,1408.6320,1408.6105' );
-is( $imp2->count, 3, "count ok" );
+dies_ok { $pkg->new() } "missing arguments";
 
-my $imp3 = $pkg->new( query => "electron", limit => 20 );
-is( $imp3->count, 20, "count ok" );
+is $pkg->new( id => '1408.6349' )->count, 1, "count ok";
+
+is $pkg->new( id => '1408.6349,1408.6320,1408.6105' )->count, 3, "count ok";
+
+is $pkg->new( query => "electron", limit => 20 )->count, 20, "count ok";
+
+lives_ok { $pkg->new(orcid => '0000-0002-6477-8992') } "pass orcid argument";
+
+ok $pkg->new(orcid => '0000-0002-6477-8992')->count >= 1, "at least one record";
 
 done_testing;

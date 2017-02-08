@@ -2,6 +2,9 @@ Revision history for Catmandu-ArXiv
 
 {{$NEXT}}
 
+0.030  2017-02-08 15:22:58 CET
+    - fetch data via ORCID ID
+
 0.023  2016-04-15 12:37:58 CEST
     - set timeout
     - badge (travis, coveralls)

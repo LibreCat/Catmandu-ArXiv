@@ -20,8 +20,8 @@ is $pkg->new( id => '1408.6349,1408.6320,1408.6105' )->count, 3, "count ok";
 
 is $pkg->new( query => "electron", limit => 20 )->count, 20, "count ok";
 
-lives_ok { $pkg->new(orcid => '0000-0002-6477-8992') } "pass orcid argument";
+lives_ok { $pkg->new(id => '0000-0002-6477-8992') } "pass orcid argument";
 
-ok $pkg->new(orcid => '0000-0002-6477-8992')->count >= 1, "at least one record";
+ok $pkg->new(id => '0000-0002-6477-8992')->count >= 1, "at least one record";
 
 done_testing;

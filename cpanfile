@@ -17,3 +17,4 @@ requires 'Catmandu';
 requires 'Moo';
 requires 'Furl';
 requires 'Catmandu::XML';
+requires 'Catmandu::Identifier';

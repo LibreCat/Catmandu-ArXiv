@@ -2,6 +2,7 @@ package Catmandu::Importer::ArXiv;
 
 use Catmandu::Sane;
 use Catmandu::Importer::XML;
+use Catmandu::Fix::Condition::is_valid_orcid as => 'is_valid_orcid';
 use Moo;
 use Furl;
 
@@ -15,15 +16,14 @@ use constant BASE_URL => 'http://export.arxiv.org/api/query?';
 has base => ( is => 'ro', default => sub { return BASE_URL; } );
 has query => ( is => 'ro' );
 has id    => ( is => 'ro' ); # can be a comma seperated list
-has orcid => ( is => 'ro' );
 has start => ( is => 'ro' );
 has limit => ( is => 'ro' );
 
 sub BUILD {
     my $self = shift;
 
-    Catmandu::BadVal->throw("Either id or query or orcid is required.")
-        unless $self->id || $self->query || $self->orcid;
+    Catmandu::BadVal->throw("Either id or query required.")
+        unless $self->id || $self->query;
 }
 
 sub _request {
@@ -44,8 +44,9 @@ sub _call {
     my ($self) = @_;
 
     my $url;
-    if ($self->orcid) {
-        $url = "https://arxiv.org/a/" . $self->orcid . ".atom2";
+    my $rec = {id => $self->id};
+    if ($self->id && is_valid_orcid($rec, 'id')) {
+        $url = "https://arxiv.org/a/" . $self->id . ".atom2";
     }
     else {
         $url = $self->base;
@@ -116,7 +117,7 @@ Search by query.
 
 =item id
 
-Search by one or many arXiv ids. This parameter accepts a comma-separated list of ids.
+Search by one or many arXiv ids. This parameter accepts a comma-separated list of ids. This parameter accepts also an ORCID ID.
 
 =item start
 

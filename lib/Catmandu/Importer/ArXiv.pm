@@ -44,9 +44,8 @@ sub _call {
     my ($self) = @_;
 
     my $url;
-    my $rec = {id => $self->id};
-    if ($self->id && is_valid_orcid($rec, 'id')) {
-        $url = "https://arxiv.org/a/" . $self->id . ".atom2";
+    if ($self->query && is_valid_orcid({orcid => $self->query}, 'orcid')) {
+        $url = "https://arxiv.org/a/" . $self->query . ".atom2";
     }
     else {
         $url = $self->base;

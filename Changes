@@ -2,6 +2,9 @@ Revision history for Catmandu-ArXiv
 
 {{$NEXT}}
 
+0.101  2017-03-10 16:51:05 CET
+    - cpanfile
+
 0.100  2017-03-02 13:01:13 CET
     - better ORCID support
 

@@ -18,16 +18,15 @@ my %module_build_args = (
     "=over"
   ],
   "dist_name" => "Catmandu-ArXiv",
-  "dist_version" => "0.100",
+  "dist_version" => "0.101",
   "license" => "perl",
   "module_name" => "Catmandu::ArXiv",
   "recursive_test_files" => 1,
   "requires" => {
-    "Catmandu" => 0,
-    "Catmandu::Identifier" => 0,
-    "Catmandu::XML" => 0,
-    "Furl" => 0,
-    "Moo" => 0,
+    "Catmandu" => "1.03",
+    "Catmandu::Identifier" => "0.06",
+    "Catmandu::XML" => "0.16",
+    "Furl" => "3.07",
     "perl" => "v5.10.1"
   },
   "test_requires" => {

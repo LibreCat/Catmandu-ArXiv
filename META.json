@@ -42,11 +42,10 @@
       },
       "runtime" : {
          "requires" : {
-            "Catmandu" : "0",
-            "Catmandu::Identifier" : "0",
-            "Catmandu::XML" : "0",
-            "Furl" : "0",
-            "Moo" : "0",
+            "Catmandu" : "1.03",
+            "Catmandu::Identifier" : "0.06",
+            "Catmandu::XML" : "0.16",
+            "Furl" : "3.07",
             "perl" : "v5.10.1"
          }
       },
@@ -69,7 +68,7 @@
          "web" : "https://github.com/LibreCat/Catmandu-ArXiv"
       }
    },
-   "version" : "0.100",
+   "version" : "0.101",
    "x_contributors" : [
       "Christian Pietsch <christian.pietsch@uni-bielefeld.de>",
       "Vitali Peil <vitali.peil@uni-bielefeld.de>",

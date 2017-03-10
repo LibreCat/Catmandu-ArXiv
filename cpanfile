@@ -13,8 +13,7 @@ on test => sub {
     requires 'Test::Exception', '0.32';
 };
 
-requires 'Catmandu';
-requires 'Moo';
-requires 'Furl';
-requires 'Catmandu::XML';
-requires 'Catmandu::Identifier';
+requires 'Catmandu', '1.03';
+requires 'Furl', '3.07';
+requires 'Catmandu::XML', '0.16';
+requires 'Catmandu::Identifier', '0.06';

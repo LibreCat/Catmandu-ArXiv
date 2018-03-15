@@ -1,5 +1,7 @@
 package Catmandu::Importer::ArXiv;
 
+our $VERSION = '0.101';
+
 use Catmandu::Sane;
 use Catmandu::Importer::XML;
 use Catmandu::Fix::Condition::is_valid_orcid as => 'is_valid_orcid';

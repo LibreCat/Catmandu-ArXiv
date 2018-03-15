@@ -35,8 +35,6 @@ sub _request {
     );
 
     my $res = $furl->get($url);
-    die $res->status_line unless $res->is_success;
-
     return $res;
 }
 

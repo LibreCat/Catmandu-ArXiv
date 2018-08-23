@@ -13,7 +13,7 @@ with 'Catmandu::Importer';
 # INFO:
 # http://arxiv.org/help/api/index/
 
-use constant BASE_URL => 'http://export.arxiv.org/api/query?';
+use constant BASE_URL => 'https://export.arxiv.org/api/query?';
 
 has base => ( is => 'ro', default => sub { return BASE_URL; } );
 has query => ( is => 'ro' );

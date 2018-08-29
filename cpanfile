@@ -19,3 +19,4 @@ requires 'Catmandu::XML', '0.16';
 requires 'XML::LibXML';
 requires 'XML::LibXSLT';
 requires 'Catmandu::Identifier', '0.06';
+requires 'URI';

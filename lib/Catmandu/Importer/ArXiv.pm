@@ -115,6 +115,14 @@ sub generator {
 
 =over
 
+=item base_api
+
+The API endpoint. Default is https://export.arxiv.org/api/query
+
+=item base_frontend
+
+The arXiv base url. Default is https://arxiv.org
+
 =item query
 
 Search by query.

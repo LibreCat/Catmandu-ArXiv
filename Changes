@@ -1,6 +1,8 @@
 Revision history for Catmandu-ArXiv
 
 {{$NEXT}}
+
+0.210  2018-08-29 08:31:27 CEST
     - introduce base_api and base_frontend parameters; don't use base anymore
 
 0.200  2018-03-15 10:07:04 CET

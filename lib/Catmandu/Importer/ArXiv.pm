@@ -1,6 +1,6 @@
 package Catmandu::Importer::ArXiv;
 
-our $VERSION = '0.200';
+our $VERSION = '0.210';
 
 use Catmandu::Sane;
 use Catmandu::Importer::XML;

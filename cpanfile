@@ -20,3 +20,4 @@ requires 'XML::LibXML';
 requires 'XML::LibXSLT';
 requires 'Catmandu::Identifier', '0.06';
 requires 'URI';
+requires 'IO::Socket::SSL', '2.059';

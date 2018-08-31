@@ -18,7 +18,7 @@ my %module_build_args = (
     "=over"
   ],
   "dist_name" => "Catmandu-ArXiv",
-  "dist_version" => "0.210",
+  "dist_version" => "0.211",
   "license" => "perl",
   "module_name" => "Catmandu::ArXiv",
   "recursive_test_files" => 1,
@@ -27,6 +27,7 @@ my %module_build_args = (
     "Catmandu::Identifier" => "0.06",
     "Catmandu::XML" => "0.16",
     "Furl" => "3.07",
+    "IO::Socket::SSL" => "2.059",
     "URI" => 0,
     "XML::LibXML" => 0,
     "XML::LibXSLT" => 0,

@@ -2,6 +2,9 @@ Revision history for Catmandu-ArXiv
 
 {{$NEXT}}
 
+0.211  2018-08-31 09:13:02 CEST
+    - add missing dependency IO::Socket::SSL
+
 0.210  2018-08-29 08:31:27 CEST
     - introduce base_api and base_frontend parameters; don't use base anymore
 

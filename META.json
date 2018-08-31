@@ -46,6 +46,7 @@
             "Catmandu::Identifier" : "0.06",
             "Catmandu::XML" : "0.16",
             "Furl" : "3.07",
+            "IO::Socket::SSL" : "2.059",
             "URI" : "0",
             "XML::LibXML" : "0",
             "XML::LibXSLT" : "0",
@@ -71,7 +72,7 @@
          "web" : "https://github.com/LibreCat/Catmandu-ArXiv"
       }
    },
-   "version" : "0.210",
+   "version" : "0.211",
    "x_contributors" : [
       "Christian Pietsch <christian.pietsch@uni-bielefeld.de>",
       "Vitali Peil <vitali.peil@uni-bielefeld.de>",

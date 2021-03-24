@@ -29,5 +29,5 @@ jobs:
       - name: Regular tests
         run: |
           perl Build.PL
-          perl cover -test
+          cover -test
 
